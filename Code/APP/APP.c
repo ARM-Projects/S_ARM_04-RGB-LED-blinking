@@ -4,19 +4,17 @@
 
 static sys_control_str_config_t str_sys_control_config;
 static sw_pwm_configuration_t green_led;
-
 static button_str_btn_config_t btn_1;
-
+static	sys_control_str_config_t sys_control_config;
 void app_init(void)
 {
 	// Configure Clock System
-	sys_control_str_config_t sys_control_config;
+
 	sys_control_config.enu_OSCSRC = SYS_CONTROL_PIOSC;
 	sys_control_config.prescaller = 1;
 	sys_control_set_clock_system(&sys_control_config);
 
 	// Configure Green LED
-	sw_pwm_configuration_t green_led;
 	green_led.port_index = DIO_PORTF;
 	green_led.pin_index = DIO_PIN_3;
 	green_led.frequency = 2;
@@ -26,7 +24,7 @@ void app_init(void)
 	pwm_start(&green_led);
 
 	// Configure Button 1
-	button_str_btn_config_t btn_1;
+
 	btn_1.port_name = DIO_PORTF;
 	btn_1.pin = DIO_PIN_4;
 	btn_1.button_state = BUTTON_RELEASED;
@@ -35,9 +33,11 @@ void app_init(void)
 }
 
 void app_run(void){
+	
 	app_enu_led_state_t leds_state = GREEN_LED_OFF;
 	btn_enu_btn_state_t btn_1_state;
 	uint8_t state_changed_flag = 0;
+	btn_1.port_name = DIO_PORTF;
 	while(1){
 		
 		if(state_changed_flag == 1){

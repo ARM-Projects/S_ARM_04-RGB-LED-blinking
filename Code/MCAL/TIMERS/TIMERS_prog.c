@@ -5,6 +5,8 @@
 #include "../../STD_LIBRARIES/STD_TYPES.h"
 #include "../../STD_LIBRARIES/bit_math.h"
 
+
+static ptr_void_func timer_callback_func[10]=  {NULL};
 /**
  * Enables the clock for the specified timer.
  *
