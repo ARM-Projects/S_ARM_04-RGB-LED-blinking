@@ -31,7 +31,7 @@ typedef enum{
     LED_NULL_PTR
 }led_enu_return_state_t;
 /* section : Function Declaration*/
-led_enu_return_state_t led_intialize(led_str_led_config_t *ptr_str_led_config);
+led_enu_return_state_t led_initialization(led_str_led_config_t *ptr_str_led_config);
 led_enu_return_state_t led_turn_on(led_str_led_config_t *ptr_str_led_config);
 led_enu_return_state_t led_turn_off(led_str_led_config_t *ptr_str_led_config);
 led_enu_return_state_t led_toggle(led_str_led_config_t *ptr_str_led_config);
