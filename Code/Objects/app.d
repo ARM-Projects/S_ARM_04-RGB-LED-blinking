@@ -1,0 +1,12 @@
+.\objects\app.o: APP\APP.c
+.\objects\app.o: APP\APP.h
+.\objects\app.o: APP\../HAL/LED/LED.h
+.\objects\app.o: APP\../HAL/LED/../../MCAL/DIO/DIO_interface.h
+.\objects\app.o: APP\../HAL/LED/../../STD_LIBRARIES/STD_TYPES.h
+.\objects\app.o: APP\../HAL/LED/../../STD_LIBRARIES/bit_math.h
+.\objects\app.o: APP\../HAL/BUTTON/Button.h
+.\objects\app.o: APP\../SERVICE/DELAY/DELAY.h
+.\objects\app.o: APP\../SERVICE/DELAY/../../MCAL/SYSTICK/SYSTICK_interface.h
+.\objects\app.o: APP\../HAL/SW_PWM/SW_PWM.h
+.\objects\app.o: APP\../HAL/SW_PWM/../../MCAL/TIMERS/TIMERS_interface.h
+.\objects\app.o: APP\../MCAL/SYS_CONTROL/SYS_CONTROL_interface.h

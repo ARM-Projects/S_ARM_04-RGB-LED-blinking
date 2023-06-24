@@ -1,0 +1,6 @@
+#include "TIMERS_private.h"
+#include "TIMERS_interface.h"
+#include "TIMERS_config.h"
+#include "../NVIC/NVIC_interface.h"
+#include "../../STD_LIBRARIES/STD_TYPES.h"
+#include "../../STD_LIBRARIES/bit_math.h"
